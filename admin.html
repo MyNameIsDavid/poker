@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style/admin.css" media="screen" charset="utf-8">
+  </head>
+  <body>
+    <div class="mainmenu hidden" id="mainmenu">
+      <div class="leftmain">
+        <header>Creating new game</header>
+        <span class="weight">Global settings:</span>
+        <div>
+          <span>Lobby name: </span><input type="text" name="lobby_name" value="">
+        </div>
+        <br>
+        <div>
+          <span>Gametype:</span>
+          <select name="gametype">
+            <option value="poker">Poker</option>
+          </select>
+        </div>
+        <br>
+        <div>
+          <span>Public:</span>
+          <input type="checkbox" id="public" name="public" checked onclick="showInvitations()">
+        </div>
+        <br>
+        <hr>
+        <br>
+        <span class="weight">Game-specific settings:</span>
+        <div>
+          <span>Number of players:</span>
+          <select name="numplayers">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+        <br>
+        <div>
+          <span>Buy-in:</span>
+          <input type="text" name="buyin" value="0">
+        </div>
+        <br>
+        <div>
+          <span>Big blind starting value:</span>
+          <select name="bigblind">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+      </div>
+      <div id="rightmain" class="rightmain hidden">
+        <header>Invite players</header>
+        <span class="weight">Find people:</span>
+        <div>
+          <span>By name:</span>
+          <input type="text" name="invitename" value="" autofocus>
+        </div>
+        <br>
+        <div>
+          <span class="float-top">Suggestions:</span>
+          <canvas id="suggestions" width="256" height="64"></canvas>
+        </div>
+        <br>
+        <span class="weight">Sent invitations:</span>
+        <ul class="sent-invites">
+          <li>Player 1 <img src="images/pending.png" width="16px" height="16px" /></li>
+          <li>Player 2 <img src="images/denied.png" width="16px" height="16px" /></li>
+          <li>Player 3 <img src="images/accepted.png" width="16px" height="16px" /></li>
+          <li>Player 3</li>
+          <li>Player 3</li>
+          <li>Player 3</li>
+          <li>Player 3</li>
+          <li>Player 3</li>
+          <li>Player 3</li>
+          <li>Player 3</li>
+          <li>Player 3</li>
+          <li>Player 3</li>
+          <li>Player 3</li>
+          <li>Player 3</li>
+          <li>Player 3</li>
+          <li>Player 3</li>
+          <li>Player 3</li>
+          <li>Player 3</li>
+          <li>Player 3</li>
+          <li>Player 3</li>
+          <li>Player 3</li>
+          <li>Player 3</li>
+          <li>Player 3</li>
+          <li>Player 3</li>
+          <li>Player 3</li>
+          <li>Player 3</li>
+          <li>Player 3</li>
+          <li>Player 3</li>
+          <li>Player 3</li>
+          <li>Player 3</li>
+          <li>Player 3</li>
+        </ul>
+      </div>
+    </div>
+    <div class="rightmenu" id="rightmenu">
+      <header class="weight">Admin panel</header>
+      <img src="images/add.png" width="32px" height="32px" onclick="create()"/>
+      <img src="images/save.png" width="32px" height="32px" onclick="save()"/>
+      <img src="images/delete.png" width="32px" head="32px" onclick="delete()"/>
+    </div>
+    <script src="app/admin.js" charset="utf-8"></script>
+  </body>
+</html>

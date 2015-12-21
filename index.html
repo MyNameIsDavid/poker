@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Singleplayer Poker</title>
+    <link rel="stylesheet" href="style/style.css" media="screen" charset="utf-8">
+  </head>
+  <body>
+    <button type="button" onclick="submit()">Submit</button>
+    <div class="header">
+      Mogguh gasten, dit is gewoon wat willekeurige text, maar het is in ieder geval niet zo lang.
+    </div>
+    <!--<canvas id="canvas" width="1080" height="720">This browser clearly sucks. Update your browser...</canvas>-->
+    <div class="greyout" id="greyout">
+    </div>
+    <div class="temp" id="temp">
+      <span class="weight">Select a lobby:</span>
+      <select class="dropdown">
+        <option value="lobby1">lobby 1</option>
+        <option value="lobby2">lobby 2</option>
+      </select>
+      <button type="button" onclick="submit()">Submit</button>
+      <hr>
+      <span class="weight">Alternatively, log in as an admin:</span>
+      <input type="text" name="name" value="Username">
+      <input type="password" name="name" value="Password">
+    </div>
+    <script src="app/graphics.js" charset="utf-8"></script>
+    <script src="app/app.js" charset="utf-8"></script>
+  </body>
+</html>

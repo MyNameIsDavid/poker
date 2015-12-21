@@ -1,0 +1,140 @@
+$mainmenu-width: 40%;
+$mainmenu-items-margin-top: 0.5%;
+
+*{
+  margin: 0;
+  font: 14px sans-serif;
+}
+
+body{
+  background-color: #423A46;
+}
+
+.mainmenu{
+  width: $mainmenu-width;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  color: #FFF;
+  padding-top: 1%;
+  box-sizing: border-box;
+  padding-right: 5%;
+
+  div{
+    margin-left: 3%;
+    margin-top: $mainmenu-items-margin-top;
+  }
+
+  input{
+    width: 13%;
+    box-sizing: border-box;
+    float: right;
+    padding-left: 3px;
+  }
+
+  select{
+    float:right;
+    width: 13%;
+  }
+
+  input[type="checkbox"]{
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 0 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+  }
+
+  header{
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    margin-top: $mainmenu-items-margin-top;
+  }
+
+}
+
+.weight{
+  font-size: 16px;
+  font-weight: bolder;
+  margin-left: 2%;
+  display: inline-block;
+  margin-bottom: 1%;
+}
+
+.rightmain{
+  position: absolute;
+  left: 97%;
+  top: 0;
+  width: 65%;
+
+  header{
+    margin-top: 4%;
+  }
+
+  input{
+    width: 80%;
+  }
+
+  span{
+    display: inline-block;
+  }
+
+  li{
+    margin-top: 0.5%;
+  }
+}
+
+.float-top{
+  vertical-align: top;
+}
+
+.rightmenu{
+  display: block;
+  background-color: #201E29;
+  position: absolute;
+  top: 0;
+  left: 70%;
+  width: 30%;
+  height: 100%;
+  color: #FFF;
+
+  header{
+    margin-top: 4%;
+    font-size: 2em;
+    margin-left: 4%;
+  }
+
+  img{
+    margin-right: 1%;
+    margin-top: 4%;
+    cursor: pointer;
+    float: right;
+  }
+
+  img:hover{
+    opacity: 0.5;
+  }
+}
+
+.hidden{
+  display: none;
+}
+
+.sent-invites{
+  overflow: auto;
+  height: 100px;
+
+  img{
+    vertical-align: middle;
+    margin-top: -3px;
+    float: right;
+    margin-right: 5%;
+  }
+
+  li{
+    white-space: nowrap;
+  }
+}
